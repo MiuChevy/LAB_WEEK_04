@@ -37,7 +37,8 @@ class CafeFragment : Fragment() {
         val adapter = CafeAdapter(childFragmentManager, lifecycle)
         viewPager.adapter = adapter
         TabLayoutMediator(tabLayout, viewPager) { tab, position ->
-            tab.text = resources.getString(TABS_FIXED[position])
+            tab.text = resources.getString(TABS_FIXED[position].first)
         }.attach()
+
     }
 }

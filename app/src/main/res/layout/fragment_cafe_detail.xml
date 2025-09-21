@@ -1,14 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".CafeDetailFragment"
-    android:padding="30dp">
+    android:layout_height="match_parent">
+
     <TextView
-        android:id="@+id/content_description"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello Blank Fragment" />
-</FrameLayout>
+        android:id="@+id/cafe_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/cafe_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp" />
+
+</LinearLayout>
